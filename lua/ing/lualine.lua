@@ -9,10 +9,10 @@ end
 
 local diagnostics = {
 	"diagnostics",
-	sources = { "nvim_diagnostic" },
+	sources = { "coc" },
 	sections = { "error", "warn" , "info"},
 	symbols = { error = " ", warn = " ", info = " " },
-	-- colored = false,
+	colored = false,
 	update_in_insert = false,
 	always_visible = true,
 }
@@ -51,7 +51,7 @@ lualine.setup {
   options = {
     icons_enabled = true,
     theme = 'auto',
-    component_separators = { left = '', right = '|'},
+    component_separators = { left = '|', right = '|'},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {
         "alpha", "dashboard", "NvimTree",
@@ -69,7 +69,7 @@ lualine.setup {
   },
   sections = {
     lualine_a = {mode},
-    lualine_b = {'branch', diff},
+    lualine_b = {'branch', diff, diagnostics},
     lualine_c = {'filename'},
     lualine_x = { 'encoding', 'fileformat', 'filetype'},
     lualine_y = {progress},

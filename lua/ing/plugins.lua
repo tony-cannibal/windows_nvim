@@ -53,8 +53,8 @@ return packer.startup(function(use)
     use {'akinsho/bufferline.nvim', tag = "v3.*"}
     use {'nvim-telescope/telescope.nvim', tag = '0.1.0'}
     use {"windwp/nvim-autopairs"}
-    use 'lewis6991/impatient.nvim'
-    use 'sheerun/vim-polyglot'
+    use {'lewis6991/impatient.nvim'}
+    use {'sheerun/vim-polyglot'}
 
     -- Color Schemes
     use {'folke/tokyonight.nvim'}
