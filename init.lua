@@ -7,7 +7,6 @@ require "ing.lualine"
 require "ing.bufferline"
 require "ing.mason"
 require "ing.lsp"
-require "ing.null-ls"
 require "ing.comment"
 require "ing.autopairs"
 require "ing.toggleterm"
@@ -17,6 +16,3 @@ require "ing.telescope"
 require "ing.nvimtree"
 require "ing.colorizer"
 require "ing.alpha"
-
-
-
